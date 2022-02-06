@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".Attention">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#dd2476">
+    </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topToolbar"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/round_button"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:id="@+id/notiClick"
+                android:padding="10sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/gothica1_medium"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:text="Click to notify"/>
+
+        </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/botToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#ff512f">
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

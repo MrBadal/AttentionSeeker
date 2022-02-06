@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeCreate"
+    android:background="@drawable/background_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#dd2476">
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPopup"
+        android:layout_centerInParent="true"
+        android:text="Create Code"
+        android:fontFamily="@font/gothica1_bold"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_button"
+        android:padding="10sp"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/botToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#ff512f">
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

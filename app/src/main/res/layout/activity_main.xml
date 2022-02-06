@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#dd2476">
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        android:layout_above="@id/botToolbar">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/attention"
+            android:src="@drawable/speaker"
+            />
+
+
+        <Button
+            android:id="@+id/attention"
+            android:onClick="attention"
+            android:layout_above="@id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gothica1_bold"
+            android:background="@drawable/menu_button"
+            android:text="Request Attention" />
+
+        <Button
+            android:id="@+id/button1"
+            android:onClick="name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gothica1_bold"
+            android:background="@drawable/menu_button"
+            android:text="Attention Seeker's Name" />
+
+        <Button
+            android:id="@+id/button2"
+            android:onClick="giver"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/gothica1_bold"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/menu_button"
+            android:text="Attention Giver's Name" />
+
+        <Button
+            android:id="@+id/button3"
+            android:onClick="code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_below="@id/button2"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gothica1_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/menu_button"
+            android:text="Code For the Attention Giver" />
+
+        <Button
+            android:id="@+id/button4"
+            android:onClick="insert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10sp"
+            android:layout_below="@id/button3"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gothica1_bold"
+            android:background="@drawable/menu_button"
+            android:text="Insert Code" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/botToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#ff512f">
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

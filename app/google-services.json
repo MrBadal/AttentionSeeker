@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627584457642",
+    "firebase_url": "https://attention-seeker-68015-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "attention-seeker-68015",
+    "storage_bucket": "attention-seeker-68015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627584457642:android:ddfe9957ff7371322469d3",
+        "android_client_info": {
+          "package_name": "com.it.attentionseeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627584457642-1v23hvet4cj9jrg5jd6f4kgavpteve4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdQWudPJKi6phBWZkeLcspPZ5gCQF02uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627584457642-1v23hvet4cj9jrg5jd6f4kgavpteve4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
